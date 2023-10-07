@@ -1,0 +1,157 @@
+@import '../../../style/mixins.scss';
+@import '../../../style/variables.scss';
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(7deg, #ffe66d, #6bfff0, black, #00001e, #00001e);
+  background-size: 1000% 400%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  animation-name: animationDarling;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-duration: 7s;
+  
+  @include FromMin($x-large) {
+    flex-direction: row;
+  }
+  &__description{
+    height: 100%;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    @include FromMin($x-large) {
+      align-items: flex-start;
+      padding: 0px 0px 0px 5%;
+    }
+    &__title{
+      margin: 0px 0px 10px 0px;
+      color: #e1e1e1;
+      @include FromMax($x-large) {
+        font-size: 22px;
+      }
+    }
+    &__text{
+      color: $color-text-grey;
+      margin: 5px 0px;
+    }
+    &__content-buttons{
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 10px 0px;
+      @include FromMin($x-large) {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      & a{
+        display: inline-block;
+        width: 120px;
+        text-align: center;
+        border-radius: 15px;
+        color: white;
+        padding: 5px;
+        margin: 10px 0px;
+        text-decoration: none;
+        background-color: rgb(9, 9, 80);
+      }
+
+    }
+  }
+  &__esto{
+    height: 40vh;
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+    z-index: 2;
+    @include FromMin($x-large) {
+      height: 100vh;
+    }
+  }
+  &__content-moon{
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-name: animationMoonMobile;
+    
+    @include FromMin($x-large) {
+      top: 0px;
+      left: 1100px;
+      animation-name: animationMoonDesktop;
+      max-width: 400px;
+      height: 400px;
+    }
+    @include FromMin($xx-large) {
+      max-width: 500px;
+      height: 500px;
+    }
+    @keyframes animationMoonDesktop {
+      100% {
+        top: 440px;
+        left: 250px;
+      }
+    }
+    @keyframes animationMoonMobile {
+      100% {
+        top: 200px;
+        right: 50%;
+      }
+    }
+  }
+  &__moon{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    animation-name: animationColorMoon;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 50%;
+    @keyframes animationColorMoon {
+      0% {
+        background-color: #bebdbd;
+        box-shadow: 2px 2px 50px 10px #7c7c7c;
+      }
+      50% {
+        margin-top: 10px;
+        background-color: #dedede;
+        box-shadow: 2px 2px 50px 20px #7c7c7c;
+      }
+      100% {
+        margin-top: 0px;
+        background-color: #bebdbd;
+        box-shadow: 2px 2px 50px 10px #7c7c7c;
+      }
+    }
+  }
+  @keyframes animationDarling {
+    0% {
+      // background: linear-gradient(to bottom, #ff6f61, #e52d27, #b71540);
+      background-position: 0 50%;
+    }
+    100% {
+      // background: linear-gradient(to bottom, #1a237e, #000);
+      background-position: 100% 50%;
+  
+    }
+  }
+}
