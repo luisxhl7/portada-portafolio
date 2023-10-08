@@ -1,0 +1,39 @@
+@import '../../../style/mixins.scss';
+@import '../../../style/variables.scss';
+
+.navbar{
+    background-color: #00001c;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &__content-links{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    &__description{
+        display: block;
+        height: auto;
+        width: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: $color-text-grey;
+        &.--active{
+            color: $color-white;
+        }
+    }
+    &__icon-tema{
+        color: white;
+        margin: 0px 20px;
+        cursor: pointer;
+    }
+}

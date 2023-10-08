@@ -126,20 +126,57 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     border-radius: 50%;
+    position: relative;
     @keyframes animationColorMoon {
       0% {
         background-color: #bebdbd;
-        box-shadow: 2px 2px 50px 10px #7c7c7c;
+        box-shadow: 2px 2px 50px 10px #7c7c7c, inset -50px 0 30px #585858;
       }
       50% {
         margin-top: 10px;
         background-color: #dedede;
-        box-shadow: 2px 2px 50px 20px #7c7c7c;
+        box-shadow: 2px 2px 50px 20px #7c7c7c, inset -50px 0 30px #585858;
       }
       100% {
         margin-top: 0px;
         background-color: #bebdbd;
-        box-shadow: 2px 2px 50px 10px #7c7c7c;
+        box-shadow: 2px 2px 50px 10px #7c7c7c, inset -50px 0 30px #585858;
+      }
+    }
+    &__crater{
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      &:first-child{
+        border: solid 4px rgba(121, 121, 121, .7);
+        border-right: solid 0px transparent;
+        border-top: solid 0px transparent;
+        left: 20px;
+        top: 40%;
+      }
+      &:nth-child(2){
+        border: solid 4px rgba(121, 121, 121, .7);
+        border-right: solid 0px transparent;
+        border-top: solid 0px transparent;
+        left: 140px;
+        top: 40px;
+      }
+      &:nth-child(3){
+        width: 60px;
+        height: 60px;
+        border: solid 4px rgba(121, 121, 121, .7);
+        border-right: solid 0px transparent;
+        border-top: solid 0px transparent;
+        left: 60%;
+        top: 50%;
+      }
+      &:nth-child(4){
+        border: solid 4px rgba(121, 121, 121, .7);
+        border-left: solid 0px transparent;
+        border-bottom: solid 0px transparent;
+        left: 110px;
+        top: 80%;
       }
     }
   }

@@ -59,7 +59,9 @@ export const CardBriefcase = ({image, title, description}) => {
                 </div>
 
             </div>
-            <h3 className='card-briefcase__title'>{title}</h3>
+            <a href="https://deu63jgjvax3a.cloudfront.net/">
+                <h3 className='card-briefcase__title'>{title}</h3>
+            </a>
             <p className='card-briefcase__description'>
                 {description}
             </p>

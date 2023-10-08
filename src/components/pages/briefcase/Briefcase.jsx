@@ -23,15 +23,19 @@ const proyectsList = [
 
 export const Briefcase = () => {
   return (
-    <div className='briefcase'>
-      {proyectsList.map( (item, idx) => (
-        <CardBriefcase
-          key={idx}
-          image={item.image}
-          title={item.title}
-          description={item.description}
-        />
-      ))}
-    </div>
+    <>
+      <h1>Conoce un poco de mis proyectos</h1>
+      <div className='briefcase'>
+        {proyectsList.map( (item, idx) => (
+          <CardBriefcase
+            key={idx}
+            image={item.image}
+            title={item.title}
+            description={item.description}
+          />
+        ))}
+      </div>
+    
+    </>
   )
 }

@@ -26,7 +26,10 @@ export const Home = () =>  {
       <div className='home__esto'>
         <div className='home__content-moon'>
           <div className='home__moon'>
-
+            <span className='home__moon__crater'></span>
+            <span className='home__moon__crater'></span>
+            <span className='home__moon__crater'></span>
+            <span className='home__moon__crater'></span>
           </div>
         </div>
       </div>
