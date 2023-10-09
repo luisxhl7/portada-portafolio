@@ -1,3 +1,16 @@
-.skill{
-    color: white;    
+@import '../../../style/mixins.scss';
+@import '../../../style/variables.scss';
+
+.skills{
+    &.--dark{
+        color: white;
+    }
+    &__title{
+        font-size: 30px;
+        padding: 100px 0px 50px 0px;
+        text-align: center;
+        &.--dark{
+            color: $color-white;
+        }
+    }
 }

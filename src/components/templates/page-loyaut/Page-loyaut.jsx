@@ -13,7 +13,7 @@ export const PageLoyaut = ({children}) => {
       {pathname !== '/home' &&
         <Navbar isthemeDark={isthemeDark}/>
       }
-      <section>
+      <section className={`PageLoyaut__setion ${isthemeDark ? '--dark' : ''}`}>
         {children}
       </section>
     </main>

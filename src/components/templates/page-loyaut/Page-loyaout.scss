@@ -1,5 +1,27 @@
+@import '../../../style/mixins.scss';
+@import '../../../style/variables.scss';
+
 .PageLoyaut{
-    &.--extra-padding{
-        // padding-top: 50px;
+    &__setion{
+        height: 100vh;
+        overflow: auto;
+        &.--dark{
+            background-color: $color-black-1;
+        }
+        &::-webkit-scrollbar {
+            background-color: rgba(108, 107, 107, 0.286);
+            transition: background-color 10s linear;
+        }
+        &::-webkit-scrollbar {
+            width: 12px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #b3b3b352;
+            transition: background-color 10s linear;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background-color: $color-text-grey;
+            transition: background-color 10s linear;
+        }
     }
 }

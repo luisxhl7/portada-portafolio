@@ -1,3 +1,16 @@
-.aboutMe{
-    padding-top: 30px;
+@import '../../../style/mixins.scss';
+@import '../../../style/variables.scss';
+
+.AboutMe{
+    &.--dark{
+        color: white;
+    }
+    &__title{
+        font-size: 30px;
+        padding: 100px 0px 50px 0px;
+        text-align: center;
+        &.--dark{
+            color: $color-white;
+        }
+    }
 }

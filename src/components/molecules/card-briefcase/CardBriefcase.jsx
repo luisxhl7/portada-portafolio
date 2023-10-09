@@ -4,7 +4,11 @@ import { images } from '../../../assets/image'
 
 export const CardBriefcase = ({image, title, description, isthemeDark}) => {
     return (
-        <a href="https://deu63jgjvax3a.cloudfront.net/">
+        <a 
+            href="https://deu63jgjvax3a.cloudfront.net/" 
+            target="_blank" 
+            rel='noreferrer'
+        >
             <div className={`card-briefcase ${isthemeDark ? '--dark' : ''}`}>
                 <div className='card-briefcase__content-image'>
                     <img 
