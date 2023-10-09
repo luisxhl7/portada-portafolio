@@ -1,6 +1,27 @@
+@import '../../../style/mixins.scss';
+@import '../../../style/variables.scss';
+
 .briefcase{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
+    height: 100vh;
+    padding-top: 50px;
+
+    &.--dark{
+        background-color: $color-black-1;
+    }
+
+    &__title{
+        font-size: 30px;
+        padding: 70px 0px 50px 0px;
+        text-align: center;
+        &.--dark{
+            color: $color-white;
+        }
+    }
+    
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
 }

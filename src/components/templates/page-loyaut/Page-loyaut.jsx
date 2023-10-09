@@ -4,11 +4,14 @@ import { Navbar } from '../../oganisms/navbar/Navbar'
 import { useLocation } from 'react-router-dom';
 
 export const PageLoyaut = ({children}) => {
+  const isthemeDark = JSON.parse(localStorage.getItem('themeDark'))
   let {pathname} = useLocation();
+
+
   return (
-    <main className={`PageLoyaut ${pathname !== '/home' ? '--extra-padding': ''}`}>
+    <main className={`PageLoyaut`}>
       {pathname !== '/home' &&
-        <Navbar/>
+        <Navbar isthemeDark={isthemeDark}/>
       }
       <section>
         {children}

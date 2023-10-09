@@ -1,11 +1,22 @@
 import React from 'react'
-import './Navbar.scss'
 import { NavLink } from 'react-router-dom'
 import {Brightness4} from '@mui/icons-material';
+import './Navbar.scss'
 
-export const Navbar = () => {
+export const Navbar = ({isthemeDark}) => {
+
+    const handleChangeTheme = () => {
+        if (JSON.parse(localStorage.getItem('themeDark'))) {
+            localStorage.setItem('themeDark', false)
+            window.location.reload()
+        }else{
+            localStorage.setItem('themeDark', true)
+            window.location.reload()
+        }
+    }
+
     return (
-        <nav className='navbar'>
+        <nav className={`navbar ${isthemeDark ? '--dark' : ''}`}>
             <div className='navbar__content-links'>
                 <NavLink 
                     to={'/home'}
@@ -32,7 +43,12 @@ export const Navbar = () => {
                     Portafolio
                 </NavLink>
             </div>
-            <Brightness4 className='navbar__icon-tema'/>
+            <button 
+                onClick={handleChangeTheme}
+                className='navbar__icon-tema'
+            >
+                <Brightness4/>
+            </button>
         </nav>
     )
 }

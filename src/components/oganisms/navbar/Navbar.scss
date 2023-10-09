@@ -12,6 +12,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    &.--dark{
+        background-color: $color-black-2;
+    }
 
     &__content-links{
         display: flex;
@@ -34,6 +37,8 @@
     &__icon-tema{
         color: white;
         margin: 0px 20px;
+        padding: 0px;
+        background-color: transparent;
         cursor: pointer;
     }
 }
