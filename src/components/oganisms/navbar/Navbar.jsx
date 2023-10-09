@@ -84,7 +84,7 @@ export const Navbar = ({isthemeDark}) => {
                 onClick={handleOpenMenu}
             >
                 <span className='navbar-mobile__content-icon'>
-                    <Menu className='navbar-mobile__icon'/>
+                    <Menu className={`navbar-mobile__icon ${isOpenMenu ? '--isOpen' : ''} ${isthemeDark ? '--dark' : ''}`}/>
                 </span>
                 {isOpenMenu &&
                 <>

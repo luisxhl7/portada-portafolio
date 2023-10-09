@@ -47,9 +47,6 @@
 }
 
 .navbar-mobile{
-    background-color: #00001c;
-    // width: 100px;
-    // height: 50px;
     position: absolute;
     top: 0px;
     z-index: 999;
@@ -57,18 +54,25 @@
     flex-direction: column;
     align-items: center;
     transition: width 13s ease, height 13s ease;
-    &.--dark{
-        background-color: $color-black-2;
-    }
     &.--isOpen{
+        background-color: #00001c;
+        &.--dark{
+            background-color: $color-black-2;
+        }
         width: 100%;
         transition: width 13s ease, height 13s ease;
         height: 100vh;
     }
     &__icon{
         margin: 10px;
-        color: white;
         cursor: pointer;
+        color: #00001c;
+        &.--dark{
+            color: white;
+        }
+        &.--isOpen{
+            color: white;
+        }
     }
     &__content-icon{
         display: flex;
