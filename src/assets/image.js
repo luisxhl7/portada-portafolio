@@ -1,4 +1,4 @@
-import git from './git.webp'
+import git from './git.png'
 import github from './github.svg'
 import javaScript from './javaScript.png'
 import typeScript from './typescript.png'
