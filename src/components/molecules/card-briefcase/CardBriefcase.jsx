@@ -2,10 +2,10 @@ import React from 'react'
 import './CardBriefcase.scss'
 import { images } from '../../../assets/image'
 
-export const CardBriefcase = ({image, title, description, isthemeDark}) => {
+export const CardBriefcase = ({image, title, description, isthemeDark, url}) => {
     return (
         <a 
-            href="https://deu63jgjvax3a.cloudfront.net/" 
+            href={url}
             target="_blank" 
             rel='noreferrer'
         >

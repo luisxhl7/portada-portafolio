@@ -12,11 +12,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
     &.--dark{
         background-color: $color-black-2;
-    }
-    @include FromMax($medium) {
-        // height: 100vh;
     }
 
     &__content-links{
@@ -26,7 +24,7 @@
     
     &__description{
         display: block;
-        height: auto;
+        height: 50px;
         width: 130px;
         display: flex;
         align-items: center;
@@ -54,6 +52,7 @@
     flex-direction: column;
     align-items: center;
     transition: width 13s ease, height 13s ease;
+    
     &.--isOpen{
         background-color: #00001c;
         &.--dark{
@@ -84,6 +83,7 @@
         display: flex;
         flex-direction: column;
         margin-top: 50px;
+        width: 100%;
     }
     
     &__description{
@@ -97,6 +97,13 @@
         color: $color-text-grey;
         &.--active{
             color: $color-white;
+            background-color: #161523;
+        }
+        &.--dark{
+            &.--active{
+                color: $color-white;
+                background-color: $color-grey-hover;
+            }
         }
     }
     &__icon-tema{

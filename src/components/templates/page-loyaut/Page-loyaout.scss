@@ -13,7 +13,10 @@
             transition: background-color 10s linear;
         }
         &::-webkit-scrollbar {
-            width: 12px;
+            @include FromMin($x-large) {
+                width: 12px;
+            }
+            width: 2px;
         }
         &::-webkit-scrollbar-thumb {
             background-color: #b3b3b352;

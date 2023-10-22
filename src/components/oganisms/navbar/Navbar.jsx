@@ -91,25 +91,25 @@ export const Navbar = ({isthemeDark}) => {
                     <div className='navbar-mobile__content-links'>
                         <NavLink 
                             to={'/home'}
-                            className={({isActive}) => `navbar-mobile__description ${isActive ? '--active' : ''}`}
+                            className={({isActive}) => `navbar-mobile__description ${isActive ? '--active' : ''} ${isthemeDark ? '--dark' : ''}`}
                         >
                             Home
                         </NavLink>
                         <NavLink
                             to={'/acercademi'}
-                            className={({isActive}) => `navbar-mobile__description ${isActive ? '--active' : ''}`}
+                            className={({isActive}) => `navbar-mobile__description ${isActive ? '--active' : ''} ${isthemeDark ? '--dark' : ''}`}
                         >
                             Acerca de mí
                         </NavLink>
                         <NavLink 
                             to={'/habilidades'}
-                            className={({isActive}) => `navbar-mobile__description ${isActive ? '--active' : ''}`}
+                            className={({isActive}) => `navbar-mobile__description ${isActive ? '--active' : ''} ${isthemeDark ? '--dark' : ''}`}
                         >
                             Habilidades
                         </NavLink>
                         <NavLink 
                             to={'/portafolio'}
-                            className={({isActive}) => `navbar-mobile__description ${isActive ? '--active' : ''}`}
+                            className={({isActive}) => `navbar-mobile__description ${isActive ? '--active' : ''} ${isthemeDark ? '--dark' : ''}`}
                         >
                             Portafolio
                         </NavLink>

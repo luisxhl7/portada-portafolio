@@ -1,23 +1,27 @@
 import React from 'react'
 import { CardBriefcase } from '../../molecules/card-briefcase/CardBriefcase'
-import esto from '../../../assets/vista-my-music-app.png'
+import viewMyMusicApp from '../../../assets/vista-my-music-app.png'
+import viewConactX from '../../../assets/vista-Contact-X.png'
 import './Briefcase.scss'
 
 const proyectsList = [
   {
-    image: esto,
+    image: viewMyMusicApp,
     title: 'My music app',
     description: 'Clon de Spotify: ¡Descubre mi proyecto de streaming de música utilizando la api de spotify!',
+    url:'https://main.d3mrsqa2j7ln2g.amplifyapp.com/'
   },
   {
-    image: esto,
-    title: 'Xx xx xxxx xxx',
-    description: 'Xxxxxx xxx xxx xx  xxxxxxxxx xxx xxxx xxxxx xxxxxxxxx xxxxxxx',
+    image: viewConactX,
+    title: 'Contact X',
+    description: 'Contact-X cuenta con un crud desarollado utilizando serverless y lambdas de aws con la finalidad de permitir registrar contactos',
+    url:'http://contact-x.s3-website-us-east-1.amazonaws.com'
   },
   {
-    image: esto,
+    image: viewMyMusicApp,
     title: 'Xx xx xxxx xxx',
     description: 'Xxxxxx xxx xxx xx  xxxxxxxxx xxx xxxx xxxxx xxxxxxxxx xxxxxxx',
+    url:'https://main.d3mrsqa2j7ln2g.amplifyapp.com/'
   },
 ]
 
@@ -38,6 +42,7 @@ export const Briefcase = () => {
               title={item.title}
               description={item.description}
               isthemeDark={isthemeDark}
+              url={item.url}
             />
           ))}
         </div>
