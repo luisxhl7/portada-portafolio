@@ -15,7 +15,7 @@ const proyectsList = [
     image: viewConactX,
     title: 'PostSphere',
     description: 'PostSphere es un proyecto de publicación en línea que facilita a los usuarios la creación y compartición de publicaciones breves y concisas',
-    url:'http://contact-x.s3-website-us-east-1.amazonaws.com'
+    url:'https://main.d3f8bdovm54n3v.amplifyapp.com/home'
   },
   {
     image: viewMyMusicApp,
