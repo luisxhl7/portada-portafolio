@@ -1,6 +1,6 @@
 import React from 'react'
 import './AboutMe.scss'
-import imageUser from "../../../assets/imagen-luis.jpeg";
+import imageUser from "../../../assets/imagen-luis.jpg";
 
 export const AboutMe = () => {
     const isthemeDark = JSON.parse(localStorage.getItem('themeDark'))
