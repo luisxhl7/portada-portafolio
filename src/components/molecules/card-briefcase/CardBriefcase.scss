@@ -74,4 +74,28 @@
     &__title{
         margin: 15px 0px 10px;
     }
+    &__description{
+        height: 70px;
+        overflow: auto;
+        &::-webkit-scrollbar {
+            background-color: transparent;
+            transition: background-color 10s linear;
+        }
+        &::-webkit-scrollbar {
+            width: 12px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #64646452;
+            transition: background-color 10s linear;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background-color: $color-text-grey;
+            transition: background-color 10s linear;
+        }
+    }
+    // & .card-briefcase__description::-webkit-scrollbar-track{
+    //     background-color: #ff0000;
+    //     border-radius: 20px;
+    //     border: 2px solid #005ab4;
+    // }
 }

@@ -13,8 +13,8 @@ const proyectsList = [
   },
   {
     image: viewConactX,
-    title: 'Contact X',
-    description: 'Contact-X cuenta con un crud desarollado utilizando serverless y lambdas de aws con la finalidad de permitir registrar contactos',
+    title: 'PostSphere',
+    description: 'PostSphere es un proyecto de publicación en línea que facilita a los usuarios la creación y compartición de publicaciones breves y concisas',
     url:'http://contact-x.s3-website-us-east-1.amazonaws.com'
   },
   {
