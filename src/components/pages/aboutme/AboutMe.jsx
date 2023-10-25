@@ -1,7 +1,7 @@
 import React from 'react'
-import './AboutMe.scss'
+import { RandomStars } from '../../molecules/randomStars';
 import imageUser from "../../../assets/imagen-luis.png";
-import { RandomStars } from '../../molecules/randomStars/RandomStars';
+import './AboutMe.scss'
 
 export const AboutMe = () => {
     const isthemeDark = JSON.parse(localStorage.getItem('themeDark'))

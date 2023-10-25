@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import { Brightness4, Menu } from '@mui/icons-material';
 import { NavLink } from 'react-router-dom'
-import {Brightness4,Menu} from '@mui/icons-material';
 import './Navbar.scss'
 
 export const Navbar = ({isthemeDark}) => {

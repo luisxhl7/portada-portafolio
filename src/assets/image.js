@@ -7,7 +7,8 @@ import html from './html.svg'
 import sass from './sass.svg'
 import css from './css.svg'
 import testing_library from './testiing-library.svg'
-import vista_my_music_app from './vista-my-music-app.png'
+import vista_my_music_app from './vista-my-music-app.svg'
+import vista_contact_x from './vista-Contact-X.svg'
 
 export const images = {
     git,
@@ -18,6 +19,7 @@ export const images = {
     sass,
     testing_library,
     vista_my_music_app,
+    vista_contact_x,
     html,
     css
 }

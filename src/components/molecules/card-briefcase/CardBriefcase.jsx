@@ -1,6 +1,6 @@
 import React from 'react'
-import './CardBriefcase.scss'
 import { images } from '../../../assets/image'
+import './CardBriefcase.scss'
 
 export const CardBriefcase = ({image, title, description, isthemeDark, url}) => {
     return (

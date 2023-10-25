@@ -1,7 +1,7 @@
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import './Home.scss'
 import { RandomStars } from '../../molecules/randomStars';
-import { useEffect } from 'react';
+import './Home.scss'
 
 export const Home = () =>  {
 

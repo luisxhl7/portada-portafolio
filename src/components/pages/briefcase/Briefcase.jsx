@@ -1,25 +1,24 @@
 import React from 'react'
-import { CardBriefcase } from '../../molecules/card-briefcase/CardBriefcase'
-import viewMyMusicApp from '../../../assets/vista-my-music-app.png'
-import viewConactX from '../../../assets/vista-Contact-X.png'
+import { CardBriefcase } from '../../molecules/card-briefcase'
+import { RandomStars } from '../../molecules/randomStars'
+import {images} from '../../../assets/image.js'
 import './Briefcase.scss'
-import { RandomStars } from '../../molecules/randomStars/RandomStars'
 
 const proyectsList = [
   {
-    image: viewMyMusicApp,
+    image: images.vista_my_music_app,
     title: 'My music app',
     description: 'Clon de Spotify: ¡Descubre mi proyecto de streaming de música utilizando la api de spotify!',
     url:'https://main.d3mrsqa2j7ln2g.amplifyapp.com/'
   },
   {
-    image: viewConactX,
+    image: images.vista_contact_x,
     title: 'PostSphere',
     description: 'PostSphere es un proyecto de publicación en línea que facilita a los usuarios la creación y compartición de publicaciones breves y concisas',
     url:'https://main.d3f8bdovm54n3v.amplifyapp.com/home'
   },
   {
-    image: viewMyMusicApp,
+    image: images.vista_my_music_app,
     title: 'Xx xx xxxx xxx',
     description: 'Xxxxxx xxx xxx xx  xxxxxxxxx xxx xxxx xxxxx xxxxxxxxx xxxxxxx',
     url:'https://main.d3mrsqa2j7ln2g.amplifyapp.com/'
