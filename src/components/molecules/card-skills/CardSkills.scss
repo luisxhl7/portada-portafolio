@@ -14,6 +14,7 @@
         align-items: center;
         justify-content: center;
         background-position: center;
+        z-index: -1;
     }
     &:hover{
         & .card-skills__images {
@@ -24,19 +25,15 @@
             animation-iteration-count: infinite;
 
             @keyframes animationImages {
-                0% {
-                    // transform: rotate(0deg);
-                }
                 100% {
                     transform: scale(0);
-                    // transform: rotate(360deg);
                 }
             }
         }
         & img {
             animation-name: rotation;
             animation-timing-function: linear;
-            animation-direction: alternate;
+            animation-direction: normal;
             animation-duration: 4s;
             animation-iteration-count: infinite;
 
@@ -76,6 +73,7 @@
     }
     &__title{
         text-align: center;
+        margin-top: -30px;
     }
     &__portal{
         position: absolute;
