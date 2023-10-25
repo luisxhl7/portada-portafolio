@@ -1,12 +1,28 @@
 import { NavLink } from 'react-router-dom';
 import './Home.scss'
 import { RandomStars } from '../../molecules/randomStars';
+import { useEffect } from 'react';
 
 export const Home = () =>  {
+
+    useEffect(() => {
+      const text = document.getElementById('animated-text');
+      const letters = text.innerText.split('');
+      text.innerText = '';
+  
+      letters.forEach((letter, index) => {
+        const span = document.createElement('span');
+        span.textContent = letter;
+        span.style.position = 'relative';
+        span.style.animation = `move 1s ${index / 10}s forwards`;
+        text.appendChild(span);
+      });
+    }, []);
+
   return (
     <div className="home">
       <div className='home__description'>
-        <h1 className='home__description__title'>
+        <h1 className='home__description__title' id="animated-text">
           Luis Carlos Hernández López 
         </h1>
         <p className='home__description__text'>

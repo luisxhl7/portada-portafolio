@@ -2,34 +2,50 @@
 <html>
 <head>
 <style>
-    .gradient-animation {
-        width: 250px;
-        height: 200px;
-        background: radial-gradient(ellipse 50% 30% at center,rgba(0, 0, 0, 1) 0%,  rgba(19, 15, 48, 1) 100%);       
-        background-size: 105%;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        animation: gradient 5s ease infinite;
-    }
-
-    @keyframes gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
+.text-animation {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
 </style>
 </head>
 <body>
 
-<div class="gradient-animation"></div>
+<!-- El texto que se va a animar -->
+<h1 class="text-animation" id="animated-text">¡Hola, este es un ejemplo de animación de movimiento de texto!</h1>
+
+<script>
+  const text = document.getElementById('animated-text');
+  const letters = text.innerText.split('');
+  text.innerText = '';
+  
+  letters.forEach((letter, index) => {
+    const span = document.createElement('span');
+    span.textContent = letter;
+    span.style.position = 'relative';
+    span.style.animation = `move 1s ${index / 10}s alternate`;
+    text.appendChild(span);
+  });
+</script>
+
+<style>
+@keyframes move {
+  0% {transform: translate(0, 0);
+        top: 10px;
+    }
+  25% {transform: translate(20px, 0);}
+  50% {
+    transform: translate(120px, 120px); 
+    top: 0px;
+    color: red;
+    height: 30px;
+    width: 30px;
+    }
+  75% {transform: translate(-20px, 0);}
+  100% {transform: translate(0, 0);}
+}
+</style>
 
 </body>
 </html>

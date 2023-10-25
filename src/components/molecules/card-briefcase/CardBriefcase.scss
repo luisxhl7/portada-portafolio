@@ -75,7 +75,7 @@
         margin: 15px 0px 10px;
     }
     &__description{
-        height: 70px;
+        height: 72px;
         overflow: auto;
         &::-webkit-scrollbar {
             background-color: transparent;
@@ -93,9 +93,4 @@
             transition: background-color 10s linear;
         }
     }
-    // & .card-briefcase__description::-webkit-scrollbar-track{
-    //     background-color: #ff0000;
-    //     border-radius: 20px;
-    //     border: 2px solid #005ab4;
-    // }
 }

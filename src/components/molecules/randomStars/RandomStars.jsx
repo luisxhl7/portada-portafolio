@@ -9,8 +9,8 @@ export const RandomStars = () => {
   useEffect(() => {
     // Función para generar una posición aleatoria para una estrella
     const randomPosition = () => ({
-      left: Math.random() * window.innerWidth,
-      top: Math.random() * window.innerHeight,
+      left: Math.random() * 100,
+      top: Math.random() * 100,
     });
 
     // Generar las estrellas aleatorias

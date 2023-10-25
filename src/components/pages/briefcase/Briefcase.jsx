@@ -3,6 +3,7 @@ import { CardBriefcase } from '../../molecules/card-briefcase/CardBriefcase'
 import viewMyMusicApp from '../../../assets/vista-my-music-app.png'
 import viewConactX from '../../../assets/vista-Contact-X.png'
 import './Briefcase.scss'
+import { RandomStars } from '../../molecules/randomStars/RandomStars'
 
 const proyectsList = [
   {
@@ -29,8 +30,8 @@ export const Briefcase = () => {
   const isthemeDark = JSON.parse(localStorage.getItem('themeDark'))
 
   return (
-    <>
-      <div className={`briefcase ${isthemeDark ? '--dark' : ''}`}>
+    <div className={`briefcase ${isthemeDark ? '--dark' : ''}`}>
+      <div className={`briefcase__content-info ${isthemeDark ? '--dark' : ''}`}>
         <h1 className={`briefcase__title ${isthemeDark ? '--dark' : ''}`}>
           Conoce un poco de mis proyectos
         </h1>
@@ -47,6 +48,7 @@ export const Briefcase = () => {
           ))}
         </div>
       </div>
-    </>
+    <RandomStars/>
+    </div>
   )
 }

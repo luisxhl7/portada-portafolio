@@ -3,13 +3,12 @@ import "./Star.scss";
 
 export const Star = ({ left, top }) => {
     const style = {
-        left: `${left}px`,
-        top: `${top}px`,
+        left: `${left}%`,
+        top: `${top}%`,
     };
 
     return (
         <div className="star" style={style}>
-
         </div>
     )
 };
