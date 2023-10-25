@@ -49,19 +49,21 @@ export const Skills = () => {
 
   return (
     <div className={`skills ${isthemeDark ? '--dark' : ''}`}>
-      <h1 className='skills__title'>
-        Mis Habilidades
-      </h1>
-      <div className='skills__content'>
-        {skillList.map( (item, idx) => (
-          <CardSkills
-            key={idx}
-            name={item.name}
-            image={item.image}
-            isthemeDark={isthemeDark}
-            className={item?.className}
-          />
-        ))}
+      <div className='skills__body'>
+        <h1 className='skills__title'>
+          Mis Habilidades
+        </h1>
+        <div className='skills__content'>
+          {skillList.map( (item, idx) => (
+            <CardSkills
+              key={idx}
+              name={item.name}
+              image={item.image}
+              isthemeDark={isthemeDark}
+              className={item?.className}
+            />
+          ))}
+        </div>
       </div>
       {isthemeDark &&
         <RandomStars/>
