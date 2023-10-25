@@ -1,5 +1,5 @@
 import git from './git.png'
-import github from './github.webp'
+import github from './github.svg'
 import javaScript from './javaScript.png'
 import typeScript from './typescript.png'
 import react from './react.svg'
