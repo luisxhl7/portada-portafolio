@@ -48,7 +48,9 @@ export const Briefcase = () => {
           ))}
         </div>
       </div>
-    <RandomStars/>
+      {isthemeDark &&
+        <RandomStars/>
+      }
     </div>
   )
 }
