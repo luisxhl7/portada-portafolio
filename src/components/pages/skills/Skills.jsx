@@ -1,8 +1,8 @@
 import React from 'react'
 import { images } from "../../../assets/image";
-import './Skills.scss'
 import { CardSkills } from '../../molecules/card-skills/CardSkills';
 import { RandomStars } from '../../molecules/randomStars/RandomStars';
+import './Skills.scss'
 
 const skillList = [
   {
