@@ -2,7 +2,7 @@ import React from 'react'
 import { images } from "../../../assets/image";
 import './Skills.scss'
 import { CardSkills } from '../../molecules/card-skills/CardSkills';
-
+import { RandomStars } from '../../molecules/randomStars/RandomStars';
 
 const skillList = [
   {
@@ -48,24 +48,24 @@ export const Skills = () => {
   const isthemeDark = JSON.parse(localStorage.getItem('themeDark'))
 
   return (
-    <>
-      <div className={`skills ${isthemeDark ? '--dark' : ''}`}>
-        <h1 className='skills__title'>
-          Mis Habilidades
-        </h1>
-        <div className='skills__content'>
-          {skillList.map( (item, idx) => (
-            <CardSkills
-              key={idx}
-              name={item.name}
-              image={item.image}
-              isthemeDark={isthemeDark}
-              className={item?.className}
-            />
-          ))}
-
-        </div>
+    <div className={`skills ${isthemeDark ? '--dark' : ''}`}>
+      <h1 className='skills__title'>
+        Mis Habilidades
+      </h1>
+      <div className='skills__content'>
+        {skillList.map( (item, idx) => (
+          <CardSkills
+            key={idx}
+            name={item.name}
+            image={item.image}
+            isthemeDark={isthemeDark}
+            className={item?.className}
+          />
+        ))}
       </div>
-    </>
+      {isthemeDark &&
+        <RandomStars/>
+      }
+    </div>
   )
 }
