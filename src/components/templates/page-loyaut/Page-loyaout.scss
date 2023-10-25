@@ -5,6 +5,7 @@
     &__setion{
         height: 100vh;
         overflow: auto;
+        // background-color: #5a7681bf;
         &.--dark{
             background-color: $color-black-1;
         }
