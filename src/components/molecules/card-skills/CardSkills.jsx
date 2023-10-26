@@ -9,10 +9,11 @@ export const CardSkills = ({name, image, isthemeDark}) => {
                     <div className='card-skills__portal'></div>
                 }
                 <figure
-                    className={`card-skills__images ${isthemeDark ? '--dark' : ''}`}
+                    className={`card-skills__images ${isthemeDark ? '--dark' : '--light'}`}
                     title={name}
                 >
                     <img
+                        className={` ${isthemeDark ? '--dark' : '--light'}`}
                         src={image} 
                         alt={name}
                         title={name}

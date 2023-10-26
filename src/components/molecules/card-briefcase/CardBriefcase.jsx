@@ -3,11 +3,15 @@ import { images } from '../../../assets/image'
 import './CardBriefcase.scss'
 
 export const CardBriefcase = ({image, title, description, isthemeDark, url}) => {
+    const stilo = {
+        margin: '10px',
+    }
     return (
         <a 
             href={url}
             target="_blank" 
             rel='noreferrer'
+            style={stilo}
         >
             <div className={`card-briefcase ${isthemeDark ? '--dark' : ''}`}>
                 <div className='card-briefcase__content-image'>

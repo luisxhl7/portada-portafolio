@@ -1,0 +1,39 @@
+@import '../../../style/mixins.scss';
+@import '../../../style/variables.scss';
+.Shooting-star {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 21px 10px #ffffff, 11px -8px 16px 5px #ffffff, 20px -12px 15px 5px #ffffff, 25px -20px 15px 5px #ffffff, 36px -23px 17px 5px #ffffff, 45px -31px 23px 5px #ffffff;
+  opacity: 0;
+  z-index: 999;
+  @include FromMin($x-large) {
+    animation: estrellaFugaz 2s linear;
+    @keyframes estrellaFugaz {
+      0% {
+        opacity: 1;
+        transform: translateX(100vw) translateY(10px); /* Inicia desde la derecha y 100px hacia abajo */
+      }
+      100% {
+        opacity: 0;
+        transform: translateX(-100vw) translateY(200vh); /* Termina en la izquierda y abajo de la pantalla */
+      }
+    }
+  }
+  @include FromMax($x-large) {
+    animation: estrellaFugaz 1s linear;
+    @keyframes estrellaFugaz {
+      0% {
+        opacity: 1;
+        transform: translateX(100vw) translateY(100px); /* Inicia desde la derecha y 100px hacia abajo */
+      }
+      100% {
+        opacity: 0;
+        transform: translateX(-100vw) translateY(100vh); /* Termina en la izquierda y abajo de la pantalla */
+      }
+    }
+  }
+}
+  
