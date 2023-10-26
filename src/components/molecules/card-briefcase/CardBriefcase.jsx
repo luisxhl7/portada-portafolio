@@ -12,6 +12,7 @@ export const CardBriefcase = ({image, title, description, isthemeDark, url}) => 
             target="_blank" 
             rel='noreferrer'
             style={stilo}
+            title={`Conoce ${title}`}
         >
             <div className={`card-briefcase ${isthemeDark ? '--dark' : ''}`}>
                 <div className='card-briefcase__content-image'>

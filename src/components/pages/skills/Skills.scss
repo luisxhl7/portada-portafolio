@@ -9,9 +9,9 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-
     &.--dark{
         color: white;
+        background: #000000;
     }
     &__title{
         font-size: 30px;

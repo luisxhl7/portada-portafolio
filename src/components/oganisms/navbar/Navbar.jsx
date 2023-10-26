@@ -74,6 +74,7 @@ export const Navbar = ({isthemeDark}) => {
                 <button 
                     onClick={handleChangeTheme}
                     className='navbar__icon-tema'
+                    title={isthemeDark ? 'modo dia' : 'modo noche'}
                 >
                     <Brightness4/>
                 </button>

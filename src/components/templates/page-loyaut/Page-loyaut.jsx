@@ -1,10 +1,10 @@
 import React from 'react'
-import './Page-loyaout.scss'
-import { Navbar } from '../../oganisms/navbar/Navbar'
 import { useLocation } from 'react-router-dom';
+import { Navbar } from '../../oganisms/navbar'
+import './Page-loyaout.scss'
 
 export const PageLoyaut = ({children}) => {
-  const isthemeDark = JSON.parse(localStorage.getItem('themeDark'))
+  const isthemeDark = localStorage.getItem('themeDark') ? JSON.parse(localStorage.getItem('themeDark')) : localStorage.setItem('themeDark', true)
   let {pathname} = useLocation();
 
 

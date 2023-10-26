@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import {LocationOn} from '@mui/icons-material';
 import { RandomStars } from '../../molecules/randomStars';
 import './Home.scss'
 
@@ -29,13 +30,13 @@ export const Home = () =>  {
           Desarrollador front-end
         </p>
         <p className='home__description__text'>
-          Medellin, Colombia
+          <LocationOn/> Medellin, Colombia
         </p>
 
         <div className='home__description__content-buttons'>
-          <NavLink to={'/acercademi'}>Acerca de mí</NavLink>
-          <NavLink to={'/habilidades'}>Habilidades</NavLink>
-          <NavLink to={'/portafolio'}>Portafolio</NavLink>
+          <NavLink to={'/acercademi'} title='acerca de mi'>Acerca de mí</NavLink>
+          <NavLink to={'/habilidades'} title='habilidades'>Habilidades</NavLink>
+          <NavLink to={'/portafolio'} title='portafolio'>Portafolio</NavLink>
         </div>
 
       </div>
