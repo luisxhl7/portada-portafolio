@@ -9,6 +9,7 @@ import css from './css.svg'
 import testing_library from './testiing-library.svg'
 import vista_my_music_app from './vista-my-music-app.svg'
 import vista_contact_x from './vista-Contact-X.svg'
+import vista_my_pokedex from './My-Pokedex.png'
 
 export const images = {
     git,
@@ -21,5 +22,6 @@ export const images = {
     vista_my_music_app,
     vista_contact_x,
     html,
-    css
+    css,
+    vista_my_pokedex
 }

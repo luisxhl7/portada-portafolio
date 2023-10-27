@@ -18,9 +18,9 @@ const proyectsList = [
     url:'https://main.d3f8bdovm54n3v.amplifyapp.com/home'
   },
   {
-    image: images.vista_my_music_app,
-    title: 'Xx xx xxxx xxx',
-    description: 'Xxxxxx xxx xxx xx  xxxxxxxxx xxx xxxx xxxxx xxxxxxxxx xxxxxxx',
+    image: images.vista_my_pokedex,
+    title: 'My Pokedex',
+    description: 'La Pokédex es una guía esencial que proporciona información detallada sobre cada Pokémon, incluyendo sus características, habilidades, tipos y hábitats, en el mundo de Pokémon.',
     url:'https://main.d3mrsqa2j7ln2g.amplifyapp.com/'
   },
 ]
