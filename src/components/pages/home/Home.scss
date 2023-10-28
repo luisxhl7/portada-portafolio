@@ -50,6 +50,16 @@
       align-items: center;
       flex-direction: row;
     }
+    &__networks{
+      a{
+        color: #e1e1e1;
+        margin: 5px 10px 5px 0px;
+        transition: color 1s linear;
+        :hover{
+          color: #ffffff;
+        }
+      } 
+    }
     &__content-buttons{
       width: 100%;
       max-width: 400px;
