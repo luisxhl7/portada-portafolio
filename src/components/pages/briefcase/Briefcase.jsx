@@ -6,6 +6,12 @@ import './Briefcase.scss'
 
 const proyectsList = [
   {
+    image: images.vista_my_portafolio,
+    title: 'Mi portafolio',
+    description: 'mi portafolio me permite enseñar un poco sobre mi y mis proyectos personales',
+    url:'https://main.d1682e8p58bvjn.amplifyapp.com/'
+  },
+  {
     image: images.vista_my_music_app,
     title: 'My music app',
     description: 'Clon de Spotify: ¡Descubre mi proyecto de streaming de música utilizando la api de spotify!',
