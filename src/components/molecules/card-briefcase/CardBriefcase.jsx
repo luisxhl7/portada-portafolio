@@ -2,7 +2,7 @@ import React from 'react'
 import { images } from '../../../assets/image'
 import './CardBriefcase.scss'
 
-export const CardBriefcase = ({image, title, description, isthemeDark, url}) => {
+export const CardBriefcase = ({image, title, description, isthemeDark, url, technologies}) => {
     const stilo = {
         margin: '10px',
     }
@@ -24,48 +24,16 @@ export const CardBriefcase = ({image, title, description, isthemeDark, url}) => 
                     />
 
                     <div className='card-briefcase__description-tools'>
-                        <img 
-                            src={images.react} 
-                            alt="React js"
-                            title='React js' 
-                            width={50} 
-                            height={50}
-                        />
-                        <img 
-                            src={images.javaScript} 
-                            alt="javaScript"
-                            title='javaScript' 
-                            width={50} 
-                            height={50}
-                        />
-                        <img 
-                            src={images.sass} 
-                            alt="Sass"
-                            title='Sass' 
-                            width={50} 
-                            height={50}
-                        />
-                        <img 
-                            src={images.git} 
-                            alt="Git"
-                            title='Git' 
-                            width={70} 
-                            height={70}
-                        />
-                        <img 
-                            src={images.github} 
-                            alt="Git Hub"
-                            title='Git Hub' 
-                            width={50} 
-                            height={50}
-                        />
-                        <img 
-                            src={images.testing_library} 
-                            alt="testing Library"
-                            title='testing Library' 
-                            width={50} 
-                            height={50}
-                        />
+                        {technologies.map( (item, idx) => (
+                            <img 
+                                key={idx}
+                                src={item} 
+                                alt="React js"
+                                title='React js' 
+                                width={50} 
+                                height={50}
+                            />
+                        ))}
                     </div>
 
                 </div>

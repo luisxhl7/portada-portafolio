@@ -11,6 +11,7 @@ import vista_my_music_app from './vista-my-music-app.svg'
 import vista_contact_x from './vista-Contact-X.svg'
 import vista_my_pokedex from './My-Pokedex.png'
 import vista_my_portafolio from './my-portafolio.png'
+import vista_my_store from './My-store.png'
 
 export const images = {
     git,
@@ -23,6 +24,7 @@ export const images = {
     vista_my_music_app,
     vista_contact_x,
     vista_my_portafolio,
+    vista_my_store,
     html,
     css,
     vista_my_pokedex
