@@ -42,6 +42,10 @@ const skillList = [
     image: images.typeScript,
     name: 'TypeScript',
   },
+  {
+    image: images.awsImage,
+    name: 'AWS Amazon',
+  },
 ]
 
 export const Skills = () => {
