@@ -1,5 +1,4 @@
 import React from 'react'
-import { images } from '../../../assets/image'
 import './CardBriefcase.scss'
 
 export const CardBriefcase = ({image, title, description, isthemeDark, url, technologies}) => {
@@ -18,8 +17,8 @@ export const CardBriefcase = ({image, title, description, isthemeDark, url, tech
                 <div className='card-briefcase__content-image'>
                     <img 
                         src={image}
-                        alt="spotify"
-                        title='spotify'
+                        alt={title}
+                        title={title}
                         className='card-briefcase__image'
                     />
 
@@ -27,9 +26,9 @@ export const CardBriefcase = ({image, title, description, isthemeDark, url, tech
                         {technologies.map( (item, idx) => (
                             <img 
                                 key={idx}
-                                src={item} 
-                                alt="React js"
-                                title='React js' 
+                                src={item?.image} 
+                                alt={item?.name}
+                                title={item?.name}
                                 width={50} 
                                 height={50}
                             />
