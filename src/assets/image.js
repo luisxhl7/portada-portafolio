@@ -13,6 +13,7 @@ import vista_contact_x from './vista-Contact-X.svg'
 import vista_my_pokedex from './My-Pokedex.png'
 import vista_my_portafolio from './my-portafolio.png'
 import vista_my_store from './My-store.png'
+import vista_my_budget from './My-budget.png'
 
 export const images = {
     git,
@@ -29,5 +30,6 @@ export const images = {
     html,
     css,
     vista_my_pokedex,
-    awsImage
+    awsImage,
+    vista_my_budget
 }

@@ -1,7 +1,6 @@
 @import '../../../style/mixins.scss';
 @import '../../../style/variables.scss';
 
-
 .card-skills{
 
     &__content-images{
@@ -65,7 +64,7 @@
             font-size: 20px;
             opacity: 1;
             transition: opacity 1s;
-        }    
+        }
     }
     &__title{
         text-align: center;
