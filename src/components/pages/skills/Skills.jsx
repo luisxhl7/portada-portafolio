@@ -46,6 +46,14 @@ const skillList = [
     image: images.awsImage,
     name: 'AWS Amazon',
   },
+  {
+    image: images.bootstrap,
+    name: 'Bootstrap',
+  },
+  {
+    image: images.materialUI,
+    name: 'Material UI',
+  },
 ]
 
 export const Skills = () => {

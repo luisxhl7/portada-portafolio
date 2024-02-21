@@ -15,6 +15,7 @@ import vista_my_portafolio from './my-portafolio.png'
 import vista_my_store from './My-store.png'
 import vista_my_budget from './My-budget.png'
 import bootstrap from './bootstrap.png'
+import materialUI from './material-UI.png'
 
 export const images = {
     git,
@@ -33,5 +34,6 @@ export const images = {
     vista_my_pokedex,
     awsImage,
     vista_my_budget,
-    bootstrap
+    bootstrap,
+    materialUI
 }
