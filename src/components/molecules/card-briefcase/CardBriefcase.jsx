@@ -36,7 +36,7 @@ export const CardBriefcase = ({image, title, description, isthemeDark, url, tech
                     </div>
 
                 </div>
-                <h3 className='card-briefcase__title'>{title}</h3>
+                <h2 className='card-briefcase__title'>{title}</h2>
                 <p className='card-briefcase__description'>
                     {description}
                 </p>
