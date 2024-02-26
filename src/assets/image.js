@@ -7,7 +7,7 @@ import html from './html.svg'
 import sass from './sass.svg'
 import css from './css.svg'
 import awsImage from './aws_image.png'
-import testing_library from './testiing-library.svg'
+import testing_library from './testing-library.svg'
 import vista_my_music_app from './vista-my-music-app.svg'
 import vista_contact_x from './vista-Contact-X.svg'
 import vista_my_pokedex from './My-Pokedex.png'
@@ -16,6 +16,7 @@ import vista_my_store from './My-store.png'
 import vista_my_budget from './My-budget.png'
 import bootstrap from './bootstrap.png'
 import materialUI from './material-UI.png'
+import nextJs from './nextJs.png'
 
 export const images = {
     git,
@@ -35,5 +36,6 @@ export const images = {
     awsImage,
     vista_my_budget,
     bootstrap,
-    materialUI
+    materialUI,
+    nextJs
 }

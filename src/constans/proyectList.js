@@ -101,11 +101,15 @@ export const proyectsList = [
       image: images.vista_my_pokedex,
       title: 'My Pokedex',
       description: 'La Pokédex es una guía esencial que proporciona información detallada sobre cada Pokémon, incluyendo sus características, habilidades, tipos y hábitats, en el mundo de Pokémon.',
-      url:'https://main.d30pn9qle6t7yj.amplifyapp.com/',
+      url:'https://my-pokedexx-one.vercel.app/',
       technologies: [
         {
             image: images.react,
             name: 'react js'
+        },
+        {
+            image: images.nextJs,
+            name: 'NextJs'
         },
         {
             image: images.javaScript,
@@ -126,7 +130,7 @@ export const proyectsList = [
         {
             image: images.testing_library,
             name: 'testing library'
-        }
+        },
       ]
     },
     {
