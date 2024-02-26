@@ -22,6 +22,10 @@ const skillList = [
     name: 'React',
   },
   {
+    image: images.nextJs,
+    name: 'nextJs',
+  },
+  {
     image: images.sass,
     name: 'Sass',
   },
