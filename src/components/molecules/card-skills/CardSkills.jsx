@@ -17,6 +17,9 @@ export const CardSkills = ({name, image, isthemeDark}) => {
                         src={image} 
                         alt={name}
                         title={name}
+                        width={100}
+                        height={100}
+                        loading='lazy'
                     />
                 </figure>
             </div>

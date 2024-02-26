@@ -20,6 +20,9 @@ export const CardBriefcase = ({image, title, description, isthemeDark, url, tech
                         alt={title}
                         title={title}
                         className='card-briefcase__image'
+                        width= '280px'
+                        height= '140px'
+                        loading='lazy'
                     />
 
                     <div className='card-briefcase__description-tools'>

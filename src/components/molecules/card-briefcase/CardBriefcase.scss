@@ -43,11 +43,17 @@
     }
     &__content-image{
         background-color: rgb(57, 57, 57);
-        width: 280px;
-        height: 140px;
         position: relative;
         border-radius: 10px;
+        width: 280px;
+        height: 140px;
         overflow: hidden;
+        &__image{
+            width: auto;
+            height: auto;
+            width: 280px;
+            height: 140px;
+        }
     }
     &__description-tools{
         width: 100%;
