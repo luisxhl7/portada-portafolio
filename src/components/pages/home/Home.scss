@@ -16,6 +16,15 @@
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-duration: 4s;
+  animation: transformOpacity 1s linear;
+  @keyframes transformOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   
   @include FromMin($x-large) {
     flex-direction: row;

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Brightness4, Menu } from '@mui/icons-material';
+import { Brightness4, Menu, Close } from '@mui/icons-material';
 import { NavLink } from 'react-router-dom'
 import './Navbar.scss'
 
@@ -85,7 +85,11 @@ export const Navbar = ({isthemeDark}) => {
                 onClick={handleOpenMenu}
             >
                 <span className='navbar-mobile__content-icon'>
-                    <Menu className={`navbar-mobile__icon ${isOpenMenu ? '--isOpen' : ''} ${isthemeDark ? '--dark' : ''}`}/>
+                    {isOpenMenu ?
+                        <Close className={`navbar-mobile__icon ${isOpenMenu ? '--isOpen' : ''} ${isthemeDark ? '--dark' : ''}`}/>
+                        :
+                        <Menu className={`navbar-mobile__icon ${isOpenMenu ? '--isOpen' : ''} ${isthemeDark ? '--dark' : ''}`}/>
+                    }
                 </span>
                 {isOpenMenu &&
                 <>

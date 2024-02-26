@@ -12,6 +12,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    
+    & a:hover{
+        color: #ffffff;
+        transition-duration: .2s;
+        transition-property: color;
+        transition-timing-function: linear;
+    }
 
     &.--dark{
         background-color: $color-black-2;
@@ -53,6 +60,13 @@
     align-items: center;
     transition: width 13s ease, height 13s ease;
     
+    & a:hover{
+        color: #ffffff;
+        transition-duration: .2s;
+        transition-property: color;
+        transition-timing-function: linear;
+    }
+
     &.--isOpen{
         background-color: #00001c;
         &.--dark{
