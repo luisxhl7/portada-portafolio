@@ -1,6 +1,6 @@
 import { images } from "../assets/image";
 
-export const proyectsList = [
+const projectsList = [
     {
       image: images.vista_my_portafolio,
       title: 'Mi portafolio',
@@ -206,3 +206,5 @@ export const proyectsList = [
       ]
     },
 ]
+
+export default projectsList

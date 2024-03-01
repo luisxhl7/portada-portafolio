@@ -1,10 +1,11 @@
-import React from 'react'
-import { RandomStars } from '../../molecules/randomStars';
+import React from 'react';
 import imageUser from "../../../assets/imagen-luis.png";
-import './AboutMe.scss'
+import pdf from '../../../../src/downLoad/cv-Luis-Carlos-Hernandez-Lopez.pdf';
+import './AboutMe.scss';
+
 
 export const AboutMe = () => {
-    const isthemeDark = JSON.parse(localStorage.getItem('themeDark'))
+    const isthemeDark = JSON.parse(localStorage.getItem('themeDark'));
 
     return (
         <div className={`aboutMe ${isthemeDark ? '--dark' : ''}`}>
@@ -38,10 +39,12 @@ export const AboutMe = () => {
                     Estoy entusiasmado por contribuir con mi experiencia y habilidades en tu próximo proyecto. 
                     ¡Vamos a construir algo increíble juntos!
                 </p>
+                <div className='aboutMe__content-button'>
+                    <a href={pdf} target="_blank" rel="noopener noreferrer" download="nombre_pretendido_del archivo.pdf" title='Descargar Curriculum'> 
+                        Descargar Curriculum
+                    </a>
+                </div>
             </div>
-            {isthemeDark &&
-                <RandomStars/>
-            }
         </div>
-    )
-}
+    );
+};

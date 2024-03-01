@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Star } from "../../atoms/star";
-import './RandomStars.scss'
 import ShootingStar from "../../atoms/Shooting-star/ShootingStar";
+import './RandomStars.scss'
 
 export const RandomStars = () => {
   const [stars, setStars] = useState([]);

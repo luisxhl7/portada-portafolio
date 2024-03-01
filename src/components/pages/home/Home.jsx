@@ -4,21 +4,21 @@ import {LocationOn} from '@mui/icons-material';
 import { RandomStars } from '../../molecules/randomStars';
 import { LinkedIn, GitHub } from '@mui/icons-material';
 import './Home.scss'
-export const Home = () =>  {
 
-    useEffect(() => {
-      const text = document.getElementById('animated-text');
-      const letters = text.innerText.split('');
-      text.innerText = '';
+export const Home = () =>  {
   
-      letters.forEach((letter, index) => {
-        const span = document.createElement('span');
-        span.textContent = letter;
-        span.style.position = 'relative';
-        span.style.animation = `move 1s ${index / 10}s forwards`;
-        text.appendChild(span);
-      });
-    }, []);
+  useEffect(() => {
+    const text = document.getElementById('animated-text');
+    const letters = text.innerText.split('');
+    text.innerText = '';
+    letters.forEach((letter, index) => {
+      const span = document.createElement('span');
+      span.textContent = letter;
+      span.style.position = 'relative';
+      span.style.animation = `move 1s ${index / 10}s forwards`;
+      text.appendChild(span);
+    });
+  }, []);
 
   return (
     <div className="home">

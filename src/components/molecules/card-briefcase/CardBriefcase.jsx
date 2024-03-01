@@ -2,7 +2,7 @@ import React from 'react'
 import './CardBriefcase.scss'
 
 export const CardBriefcase = ({image, title, description, isthemeDark, url, technologies}) => {
-    const stilo = {
+    const style = {
         margin: '10px',
     }
     return (
@@ -10,7 +10,7 @@ export const CardBriefcase = ({image, title, description, isthemeDark, url, tech
             href={url}
             target="_blank" 
             rel='noreferrer'
-            style={stilo}
+            style={style}
             title={`Conoce ${title}`}
         >
             <div className={`card-briefcase ${isthemeDark ? '--dark' : ''}`}>

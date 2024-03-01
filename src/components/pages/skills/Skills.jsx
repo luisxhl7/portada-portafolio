@@ -1,64 +1,7 @@
 import React from 'react'
-import { RandomStars } from '../../molecules/randomStars/RandomStars';
+import skillList from '../../../data/dataSkills';
 import { CardSkills } from '../../molecules/card-skills/CardSkills';
-import { images } from "../../../assets/image";
 import './Skills.scss'
-
-const skillList = [
-  {
-    image: images.html,
-    name: 'Html',
-  },
-  {
-    image: images.css,
-    name: 'Css',
-  },
-  {
-    image: images.javaScript,
-    name: 'JavaScript',
-  },
-  {
-    image: images.react,
-    name: 'React',
-  },
-  {
-    image: images.nextJs,
-    name: 'nextJs',
-  },
-  {
-    image: images.sass,
-    name: 'Sass',
-  },
-  {
-    image: images.testing_library,
-    name: 'Testing Library',
-  },
-  {
-    image: images.git,
-    name: 'Git',
-  },
-  {
-    image: images.github,
-    name: 'GitHub',
-    className: '--filter-gitHub',
-  },
-  {
-    image: images.typeScript,
-    name: 'TypeScript',
-  },
-  {
-    image: images.awsImage,
-    name: 'AWS Amazon',
-  },
-  {
-    image: images.bootstrap,
-    name: 'Bootstrap',
-  },
-  {
-    image: images.materialUI,
-    name: 'Material UI',
-  },
-]
 
 export const Skills = () => {
   const isthemeDark = JSON.parse(localStorage.getItem('themeDark'))
@@ -81,9 +24,6 @@ export const Skills = () => {
           ))}
         </div>
       </div>
-      {isthemeDark &&
-        <RandomStars/>
-      }
     </div>
   )
 }

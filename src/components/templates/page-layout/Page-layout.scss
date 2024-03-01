@@ -1,23 +1,38 @@
 @import '../../../style/mixins.scss';
 @import '../../../style/variables.scss';
 
-.PageLoyaut{
-    &__setion{
-        height: 100vh;
+.PageLayout{
+    &.--dark{
+        background: linear-gradient(7deg, #ffe66d, #6bfff0, black, #00001e, #00001e);
+        background-size: 1000% 400%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+        color: white;
+    }
+    &__section{
+        margin-top: 50px;
+        height: calc(100vh - 50px);
+        width: 100%;
         overflow: auto;
-        // background-color: #5a7681bf;
-        &.--dark{
-            background-color: $color-black-1;
+        z-index: 1;
+
+        &.style-home{
+            margin-top: 0px;
+            height: 100vh;
         }
+
+
         &::-webkit-scrollbar {
             background-color: rgba(108, 107, 107, 0.286);
             transition: background-color 10s linear;
-        }
-        &::-webkit-scrollbar {
+            width: 2px;
             @include FromMin($x-large) {
                 width: 12px;
             }
-            width: 2px;
         }
         &::-webkit-scrollbar-thumb {
             background-color: #b3b3b352;

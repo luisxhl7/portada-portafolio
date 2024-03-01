@@ -1,7 +1,6 @@
 import React from 'react'
-import { CardBriefcase } from '../../molecules/card-briefcase'
-import { RandomStars } from '../../molecules/randomStars'
-import { proyectsList } from '../../../constans/proyectList.js'
+import projectsList from '../../../data/projectsList'
+import {CardBriefcase} from '../../molecules/card-briefcase'
 import './Briefcase.scss'
 
 export const Briefcase = () => {
@@ -14,7 +13,7 @@ export const Briefcase = () => {
           Conoce un poco de mis proyectos
         </h1>
         <div className='briefcase__content'>
-          {proyectsList.map( (item, idx) => (
+          {projectsList.map( (item, idx) => (
             <CardBriefcase
               key={idx}
               image={item.image}
@@ -27,9 +26,6 @@ export const Briefcase = () => {
           ))}
         </div>
       </div>
-      {isthemeDark &&
-        <RandomStars/>
-      }
     </div>
   )
 }
