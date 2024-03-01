@@ -2,7 +2,7 @@
 @import '../../../style/variables.scss';
 
 .card-skills{
-
+    margin-top: 10px;
     &__content-images{
         width: 200px;
         height: 200px;
@@ -14,6 +14,10 @@
         justify-content: center;
         background-position: center;
         z-index: -1;
+        @include FromMax($medium) {
+            width: 150px;
+            height: 150px;
+        }
     }
     &:hover{
         & .card-skills__images {
@@ -58,21 +62,25 @@
         transform: scale(1);
         transition: transform 2s;
         & img{
-            // width: 100px;
-            // height: 100%;
             color: white;
             font-size: 20px;
             opacity: 1;
             transition: opacity 1s;
+            @include FromMax($medium) {
+                width: 70px;
+            }
         }
     }
     &__title{
         text-align: center;
         margin-top: -30px;
+        @include FromMax($medium) {
+            font-size: 20px;
+        }
     }
     &__portal{
         position: absolute;
-        width: 200px;
+        width: 150px;
         height: 150px;
         border-radius: 50%;
         background: radial-gradient(ellipse 50% 30% at center,rgba(0, 0, 0, 1) 0%,  rgba(19, 15, 48, 1) 100%);       
@@ -81,19 +89,24 @@
         background-position: center;
         background-size: 105%;
         box-shadow: 2px 2px 10px 10px #000000, 
-            inset 0px 0 30px 20px #000000;
-            animation-name: rotation;
-            animation-timing-function: linear;
-            animation-duration: 30s;
-            animation-iteration-count: infinite;
+        inset 0px 0 30px 20px #000000;
+        animation-name: rotation;
+        animation-timing-function: linear;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        
+        @include FromMax($medium) {
+            width: 100px;
+            height: 100px;
+        }
 
-            @keyframes rotation {
-                0% {
-                    transform: rotate(0deg);
-                }
-                100% {
-                    transform: rotate(-360deg);
-                }
+        @keyframes rotation {
+            0% {
+                transform: rotate(0deg);
             }
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
     }
 }

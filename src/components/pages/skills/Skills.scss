@@ -39,7 +39,9 @@
         align-items: center;
         justify-content: space-around;
         z-index: 1;
-
+        @include FromMax($medium) {
+            justify-content: center;
+        }
         & .card-skills:nth-child(8){
             & .--dark{
                 filter: invert(100%);

@@ -15,11 +15,11 @@ const skillList = [
   },
   {
     image: images.react,
-    name: 'React',
+    name: 'React Js',
   },
   {
     image: images.nextJs,
-    name: 'nextJs',
+    name: 'next Js',
   },
   {
     image: images.sass,
