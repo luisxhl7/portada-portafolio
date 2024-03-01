@@ -39,11 +39,11 @@ export const AboutMe = () => {
                     Estoy entusiasmado por contribuir con mi experiencia y habilidades en tu próximo proyecto. 
                     ¡Vamos a construir algo increíble juntos!
                 </p>
-                <div className='aboutMe__content-button'>
+                {/* <div className='aboutMe__content-button'>
                     <a href={pdf} target="_blank" rel="noopener noreferrer" download="nombre_pretendido_del archivo.pdf" title='Descargar Curriculum'> 
                         Descargar Curriculum
                     </a>
-                </div>
+                </div> */}
             </div>
         </div>
     );

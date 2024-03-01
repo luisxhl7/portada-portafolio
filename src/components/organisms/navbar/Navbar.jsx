@@ -30,7 +30,7 @@ export const Navbar = ({isthemeDark}) => {
     }
 
     const handleOpenMenu = () => {
-        if (screenSize <= 768) {
+        if (screenSize <= 761) {
             if (isOpenMenu) {
                 setIsOpenMenu(false)
             }else{
@@ -41,7 +41,7 @@ export const Navbar = ({isthemeDark}) => {
 
     return (
         <>
-        {screenSize >= 768  ?
+        {screenSize >= 761  ?
             <nav 
                 className={`navbar ${isthemeDark ? '--dark' : ''}`} 
             >

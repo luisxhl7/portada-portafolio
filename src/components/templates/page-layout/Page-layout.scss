@@ -16,6 +16,11 @@
     &__section{
         margin-top: 50px;
         height: calc(100vh - 50px);
+        @include FromMax($medium) {
+            margin-top: 0px;
+            height: 100vh;
+            flex-direction: row;
+        }
         width: 100%;
         overflow: auto;
         z-index: 1;
