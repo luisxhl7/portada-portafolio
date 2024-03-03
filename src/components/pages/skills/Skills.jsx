@@ -3,13 +3,12 @@ import skillList from '../../../data/dataSkills';
 import { CardSkills } from '../../molecules/card-skills/CardSkills';
 import './Skills.scss'
 
-export const Skills = () => {
-  const isthemeDark = JSON.parse(localStorage.getItem('themeDark'))
+export const Skills = ({ theme }) => {
 
   return (
-    <div className={`skills ${isthemeDark ? '--dark' : ''}`}>
+    <div className={`skills ${theme ? '--dark' : ''}`}>
       <div className='skills__body'>
-        <h1 className='skills__title'>
+        <h1 className={`skills__title ${theme ? '--dark' : ''}`}>
           Mis Habilidades
         </h1>
         <div className='skills__content'>
@@ -18,7 +17,7 @@ export const Skills = () => {
               key={idx}
               name={item.name}
               image={item.image}
-              isthemeDark={isthemeDark}
+              theme={theme}
               className={item?.className}
             />
           ))}

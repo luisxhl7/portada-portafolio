@@ -3,13 +3,12 @@ import projectsList from '../../../data/projectsList'
 import {CardBriefcase} from '../../molecules/card-briefcase'
 import './Briefcase.scss'
 
-export const Briefcase = () => {
-  const isthemeDark = JSON.parse(localStorage.getItem('themeDark'))
+export const Briefcase = ({theme}) => {
 
   return (
-    <div className={`briefcase ${isthemeDark ? '--dark' : ''}`}>
-      <div className={`briefcase__content-info ${isthemeDark ? '--dark' : ''}`}>
-        <h1 className={`briefcase__title ${isthemeDark ? '--dark' : ''}`}>
+    <div className={`briefcase ${theme ? '--dark' : ''}`}>
+      <div className={`briefcase__content-info ${theme ? '--dark' : ''}`}>
+        <h1 className={`briefcase__title ${theme ? '--dark' : ''}`}>
           Conoce un poco de mis proyectos
         </h1>
         <div className='briefcase__content'>
@@ -19,9 +18,10 @@ export const Briefcase = () => {
               image={item.image}
               title={item.title}
               description={item.description}
-              isthemeDark={isthemeDark}
+              theme={theme}
               url={item.url}
               technologies={item.technologies}
+              nameLink={item.nameLink}
             />
           ))}
         </div>

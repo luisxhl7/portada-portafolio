@@ -1,25 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useLocation } from "react-router-dom";
 import { Navbar } from "../../organisms/navbar";
 import { RandomStars } from "../../molecules/randomStars";
+import { ThemeContext } from "../../../context/themeContext";
 import "./Page-layout.scss";
 
 export const PageLayout = ({ children }) => {
-  const isthemeDark = localStorage.getItem("themeDark")
-    ? JSON.parse(localStorage.getItem("themeDark"))
-    : localStorage.setItem("themeDark", true);
+  const { theme, toggleTheme } = useContext( ThemeContext )
+  
   let { pathname } = useLocation();
   return (
-    <main className={`PageLayout ${isthemeDark ? "--dark" : ""}`}>
-      {pathname !== "/home" && <Navbar isthemeDark={isthemeDark} />}
+    <main className={`PageLayout ${theme ? "--dark" : ""}`}>
+      {pathname !== "/home" && <Navbar theme={theme} toggleTheme={toggleTheme}/>}
       <section
-        className={`PageLayout__section ${isthemeDark ? "--dark" : ""} ${
+        className={`PageLayout__section ${theme ? "--dark" : ""} ${
           pathname === "/home" ? "style-home" : ""
         }`}
       >
         {children}
       </section>
-      {isthemeDark && <RandomStars />}
+      {theme && <RandomStars />}
       <div className="PageLayout__container-cloud">
         <svg
           preserveAspectRatio="none"

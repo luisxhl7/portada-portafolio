@@ -4,16 +4,15 @@ import pdf from '../../../../src/downLoad/cv-Luis-Carlos-Hernandez-Lopez.pdf';
 import './AboutMe.scss';
 
 
-export const AboutMe = () => {
-    const isthemeDark = JSON.parse(localStorage.getItem('themeDark'));
+export const AboutMe = ({ theme }) => {
 
     return (
-        <div className={`aboutMe ${isthemeDark ? '--dark' : ''}`}>
-            <div className={`aboutMe__content-info ${isthemeDark ? '--dark' : ''}`}>
-                <figure className={`aboutMe__image ${isthemeDark ? '--dark' : ''}`}>
+        <div className={`aboutMe ${theme ? '--dark' : ''}`}>
+            <div className={`aboutMe__content-info ${theme ? '--dark' : ''}`}>
+                <figure className={`aboutMe__image ${theme ? '--dark' : ''}`}>
                     <img src={imageUser} alt="" />
                 </figure>
-                <h1 className='aboutMe__title'>
+                <h1 className={`aboutMe__title ${theme ? '--dark' : ''}`}>
                     Acerca de mí
                 </h1>
                 <p className='aboutMe__text'>
