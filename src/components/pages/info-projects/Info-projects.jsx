@@ -1,7 +1,6 @@
 import React from 'react'
 import projectsList from '../../../data/projectsList'
 import { useParams } from 'react-router-dom';
-import { LightButton } from '../../atoms/light-button';
 import './Info-projects.scss'
 
 
@@ -42,18 +41,6 @@ export const InfoProjects = ({theme}) => {
               </ul>
             </div>
           </div>
-
-          <LightButton repoGit={result[0]?.repoGit}  title={result[0]?.title}/>
-
-          {/* <div className='info-Portafolio-page__content-carousel'>
-            <SimpleSlider customSettings={customSettings}>
-              {esto.map((item) => (
-                <div className='info-Portafolio-page__content-card' key={item}>
-                  <img src={item} alt="" />
-                </div>
-              ))}
-            </SimpleSlider>
-          </div> */}
         </div>
         :
         <div className={`info-Portafolio-page-not-found ${theme ? '--dark' : ''}`}>

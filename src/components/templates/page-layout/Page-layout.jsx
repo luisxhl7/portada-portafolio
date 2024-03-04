@@ -4,7 +4,6 @@ import { Navbar } from "../../organisms/navbar";
 import { RandomStars } from "../../molecules/randomStars";
 import { ThemeContext } from "../../../context/themeContext";
 import "./Page-layout.scss";
-import { SocialNetworks } from "../../atoms/social-networks/Social-networks";
 
 export const PageLayout = ({ children }) => {
   const { theme, toggleTheme } = useContext( ThemeContext )
@@ -21,7 +20,6 @@ export const PageLayout = ({ children }) => {
         {children}
       </section>
       {theme && <RandomStars />}
-      {pathname !== "/home" && <SocialNetworks/> }
       <div className="PageLayout__container-cloud">
         <svg
           preserveAspectRatio="none"
