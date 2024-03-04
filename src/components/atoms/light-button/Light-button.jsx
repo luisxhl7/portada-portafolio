@@ -12,7 +12,6 @@ export const LightButton = ({repoGit, title}) => {
         <div className="light-button__bt__button-holder">
           <svg
             viewBox="0 0 30 30"
-            className="bi bi-reddit"
             width="40px"
             height="40px"
           >

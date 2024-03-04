@@ -1,47 +1,9 @@
 import React from 'react'
 import projectsList from '../../../data/projectsList'
 import { useParams } from 'react-router-dom';
-import { SimpleSlider } from '../../atoms/simpleSlider';
-import { images } from '../../../assets/image';
-import './Info-projects.scss'
 import { LightButton } from '../../atoms/light-button';
+import './Info-projects.scss'
 
-const esto = [images.vista_contact_x, images.vista_my_budget, images.vista_my_budget, images.vista_my_music_app, images.vista_my_pokedex]
-const customSettings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  centerMode: true,
-  accessibility: false,
-  responsive: [
-    {
-      breakpoint: 668,
-      settings: {
-        centerMode: false,
-        arrows: false,
-        slidesToShow: 1,
-      },
-    },
-    {
-      breakpoint: 968,
-      settings: {
-        arrows: false,
-        slidesToShow: 1,
-      },
-    },
-    {
-      breakpoint: 1753,
-      arrows: false,
-
-      settings: {
-        slidesToShow: 3,
-      },
-    },
-  ],
-};
 
 export const InfoProjects = ({theme}) => {
   const {id} = useParams()
