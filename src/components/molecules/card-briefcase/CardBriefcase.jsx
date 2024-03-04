@@ -7,15 +7,16 @@ export const CardBriefcase = ({image, title, description, theme, url, technologi
     return (
         <div className={`card-briefcase ${theme ? '--dark' : ''}`}>
             <div className='card-briefcase__content-image'>
-                <img 
-                    src={image}
-                    alt={title}
-                    title={title}
-                    className='card-briefcase__image'
-                    width= '280px'
-                    height= '140px'
-                    loading='lazy'
-                />
+                <figure>
+                    <img 
+                        src={image}
+                        alt={title}
+                        title={title}
+                        className='card-briefcase__image'
+                        loading='lazy'
+                    />
+
+                </figure>
 
                 <div className='card-briefcase__description-tools'>
                     {technologies.map( (item, idx) => (
@@ -36,13 +37,13 @@ export const CardBriefcase = ({image, title, description, theme, url, technologi
                 {description}
             </p>
             <div className='card-briefcase__content-buttons'>
-                {/* <NavLink 
+                <NavLink 
                     to={`/portafolio/${nameLink}`}
                     title={`Conoce ${title}`}
                     className={theme ? '--darkBtn' : ''}
                 >
                     Info
-                </NavLink> */}
+                </NavLink>
                 <a 
                     href={url}
                     target="_blank" 
