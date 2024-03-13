@@ -131,51 +131,41 @@ const projectsList = [
         tools:['React js', 'JavaScript', 'Html', 'Css', 'Sass', 'Testing Library', 'Git']
     },
     {
-        image: images.vista_my_pokedex,
-        title: 'My Pokedex',
-        nameLink: 'my-pokedex',
-        description: 'La Pokédex es una guía esencial que proporciona información detallada sobre cada Pokémon, incluyendo sus características, habilidades, tipos y hábitats, en el mundo de Pokémon.',
-        extendedDescription: <>
-            La Pokédex es mucho más que una simple guía; es una herramienta esencial para cualquier entrenador Pokémon en su viaje para convertirse en un maestro Pokémon. Este proyecto representa mi pasión por el universo Pokémon y mi habilidad para crear soluciones digitales que satisfacen las necesidades de los fans de esta franquicia icónica.
-            <br/>
-            La Pokédex obtiene su información detallada sobre cada Pokémon a través de la integración de una API especializada en datos de Pokémon. Esta API proporciona acceso a una amplia gama de información, incluyendo las características únicas de cada especie
-            <br/>
-            Aunque la base de datos de la Pokédex se alimenta a través de la API, he diseñado el sistema con un enfoque en la accesibilidad y la eficiencia, garantizando tiempos de carga rápidos y una navegación fluida.
-        </>,
-        url:'https://my-pokedexx-one.vercel.app/',
-        repoGit: 'https://github.com/luisxhl7/my-pokedexx',
-        technologies: [
-            {
-                image: images.react,
-                name: 'react js'
-            },
-            {
-                image: images.nextJs,
-                name: 'NextJs'
-            },
-            {
-                image: images.javaScript,
-                name: 'javaScript'
-            },
-            {
-                image: images.sass,
-                name: 'Sass'
-            },
-            {
-                image: images.git,
-                name: 'git'
-            },
-            {
-                image: images.github,
-                name: 'github'
-            },
-            {
-                image: images.testing_library,
-                name: 'testing library'
-            },
-        ],
-        Methodologies:['Atomic Design', 'Bem', 'Mobile first'],
-        tools:['next js', 'JavaScript', 'Html', 'Css', 'Sass', 'Testing Library', 'Axios', 'Git', 'Api "PokeApi"']
+      image: images.vista_my_pokedex,
+      title: 'My Pokedex',
+      nameLink: 'my-pokedex',
+      description: 'La Pokédex es una guía esencial que proporciona información detallada sobre cada Pokémon, incluyendo sus características, habilidades, tipos y hábitats, en el mundo de Pokémon.',
+      url:'https://my-pokedexx-one.vercel.app/',
+      technologies: [
+        {
+            image: images.react,
+            name: 'react js'
+        },
+        {
+            image: images.nextJs,
+            name: 'NextJs'
+        },
+        {
+            image: images.javaScript,
+            name: 'javaScript'
+        },
+        {
+            image: images.sass,
+            name: 'Sass'
+        },
+        {
+            image: images.git,
+            name: 'git'
+        },
+        {
+            image: images.github,
+            name: 'github'
+        },
+        {
+            image: images.testing_library,
+            name: 'testing library'
+        },
+      ]
     },
     {
         image: images.vista_my_budget,
