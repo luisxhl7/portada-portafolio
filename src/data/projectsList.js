@@ -105,7 +105,7 @@ const projectsList = [
       title: 'My Pokedex',
       nameLink: 'my-pokedex',
       description: 'La Pokédex es una guía esencial que proporciona información detallada sobre cada Pokémon, incluyendo sus características, habilidades, tipos y hábitats, en el mundo de Pokémon.',
-      url:'https://my-pokedexx-one.vercel.app/',
+      url:'https://main.dh792l7ykw60h.amplifyapp.com/',
       technologies: [
         {
             image: images.react,
