@@ -113,7 +113,7 @@ const projectsList = [
         },
         {
             image: images.nextJs,
-            name: 'Next Js'
+            name: 'NextJs'
         },
         {
             image: images.javaScript,
